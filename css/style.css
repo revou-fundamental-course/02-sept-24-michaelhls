@@ -1,0 +1,177 @@
+.main-header{
+    text-align: center;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: #2C3E50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-content.hidden {
+    display: none;
+}
+
+.selection-btn {
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: #4169E1;
+}
+/* 
+.button2 {
+    background-color: #3CB371;
+}
+
+.button3 {
+    background-color: #FF8C00;
+}
+
+.button4 {
+    background-color: #6A5ACD;
+}
+
+.button5 {
+    background-color: #CD5C5C;
+}
+*/
+.segitiga-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #4169E1;
+    border-radius: 10px;
+}
+/*
+.luas-jajar-genjang-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #3CB371;
+    border-radius: 10px;
+}
+.luas-persegi-panjang-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #FF8C00;
+    border-radius: 10px;
+}
+.luas-persegi-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #6A5ACD;
+    border-radius: 10px;
+}
+.luas-trapesium-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #CD5C5C;
+    border-radius: 10px;
+}
+*/
+.selection-btn:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+.content {
+    margin-top: 0px; 
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.container-segitiga-img {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border: #4169E1;
+}
+
+.segitiga-img {
+    display: block;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.text-segitiga {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.keterangan-segitiga {
+    text-align: left;
+    margin: 0px;
+}
+
+.text2-segitiga-img {
+    text-align: left;
+}
+
+.input-wrapper-segitiga {
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper-segitiga>input{
+    width: 65%;
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.segitiga {
+    display: flex;
+    text-align: center;
+}
+
+.segitiga>aside {
+    flex: 1;
+}
+

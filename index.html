@@ -3,12 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kalkulator Matematik</title>
+    <title>Welcome to Kalkulator Geometri</title>
     <link rel="stylesheet" href="css\style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-<
+
+<header class="main-header">
+<h1>Selamat Datang di Kalkulator Geometri</h1>
+<h3>Ini adalah website untuk membantu anda, menghitung luas dan keliling bidang geometri</h3>
+</header>
+
+<main>
+    <nav class="navbar">
+        <button class="navbar-toggler" onclick="toggleNavbar()">Menu</button>
+        <div class="selection-content hidden">
+            <section class="selection-content">
+                <button onclick="showContent('content1', this)" type="button" class="selection-btn button1">Segitiga</button>
+            </section>
+        </div>
+    <div id="content1" class="content hidden">
+    <section class="segitiga">
+        <aside> <!--Luas segitiga-->
+            <header>
+                <h1 class="segitiga-header">Luas Segitiga Sama Sisi  </h1>
+            </header>
+    
+            <article class="container-segitiga-img">
+                <div class="text1-segitiga"><h3>Rumus luas segitiga sama sisi:</h3></div>
+                <img src="aset/luas-segitiga.png" alt="Formula Segitiga Img" class="segitiga-img">
+                <div class="text2-segitiga-img">
+                    Keterangan:
+                    <br>
+                    <p class="keterangan-segitiga">
+                        a = Panjang Alas
+                        <br>
+                        t = Tinggi Segitiga
+                        <br>
+                        s = Sisi Segitiga
+                    </p>
+                </div>
+            </article>
+    
+            <hr/>
+    
+            <form>
+            <header>
+                <h1>Hitung Luas Segitiga</h1>
+            </header>
+    
+            <div class="input-wrapper-segitiga">
+                <label for="panjang-alas">Panjang Alas :</label>
+                <input type="number" id="panjang-alas" step="any" min="0"/>
+            </div>
+            <div class="input-wrapper-segitiga">
+                <label for="tinggi-segitiga">Tinggi Segitiga :</label>
+                <input type="number" id="tinggi-segitiga" step="any" min="0"/>
+            </div>
+    
+            <p id="result-luas">Hasil Perhitungan:</p>
+            <button id="hitung-luas-button" onclick="hitungLuasSegitiga()">Hitung</button>
+        </aside>
+
+        <aside> <!--Keliling segitiga-->
+            <header>
+                <h1 class="segitiga-header">Keliling Segitiga Sama Sisi  </h1>
+            </header>
+    
+            <article class="container-segitiga-img">
+                <div class="text1-segitiga"><h3>Rumus Keliling segitiga sama sisi:</h3></div>
+                <img src="aset/luas-segitiga.png" alt="Formula Segitiga Img" class="segitiga-img">
+                <div class="text2-segitiga-img">
+                    Keterangan:
+                    <br>
+                    <p class="keterangan-segitiga">
+                        a = Panjang Alas
+                        <br>
+                        t = Tinggi Segitiga
+                        <br>
+                        s = Sisi Segitiga
+                    </p>
+                </div>
+            </article>
+    
+            <hr/>
+    
+            <form>
+            <header>
+                <h1>Hitung Keliling Segitiga</h1>
+            </header>
+    
+            <div class="input-wrapper-segitiga">
+                <label for="panjang-sisi">Panjang Sisi :</label>
+                <input type="number" id="panjang-sisi" step="any" min="0"/>
+            </div>
+
+            <p id="result-keliling">Hasil Perhitungan:</p>
+            <button id="hitung-keliling-button " onclick="hitungKelilingSegitiga()">Hitung</button>
+        </aside>
+    </section>
+    </div>
+</main>
+
 </body>
 
 </html>
